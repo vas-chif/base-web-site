@@ -1,0 +1,22 @@
+{
+  "name": "websitebase",
+  "version": "1.0.0",
+  "description": "A fullstack crate a web base site",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "base",
+    "project"
+  ],
+  "author": "@vas-chif <vasile.chifeac@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/vas-chif/base-web-site.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30"
+  }
+}
