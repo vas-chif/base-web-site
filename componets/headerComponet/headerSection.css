@@ -1,0 +1,15 @@
+@import url(./headerSection/sidebar.css);
+@import url(./headerSection/slide.css);
+
+
+#headerId {
+    width: 1280px;
+    height: 680px;
+    display: grid;
+
+}
+
+#headerId {
+    gap: 20px;
+    grid-template-columns: 7% 93%;
+}

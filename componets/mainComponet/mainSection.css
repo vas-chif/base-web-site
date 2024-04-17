@@ -1,0 +1,17 @@
+@import url(./mainSections/aboutUs.css);
+@import url(./mainSections/service.css);
+@import url(./mainSections/whyUS.css);
+@import url(./mainSections/ourMasters.css);
+@import url(./mainSections/collectionPhoto.css);
+
+#mainId {
+    width: 1280px;
+    height: auto;
+    display: block;
+
+}
+
+#mainId {
+    gap: 20px;
+    grid-template-columns: 7% 93%;
+}

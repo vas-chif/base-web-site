@@ -1,0 +1,7 @@
+.footer {
+    width: 1280px;
+    height: 344px;
+    flex-shrink: 0;
+    background: #191C26;
+    color: #fff;
+}

@@ -1,0 +1,52 @@
+@import url(./componets/headerComponet/headerSection.css);
+@import url(./componets/mainComponet/mainSection.css);
+@import url(./componets/footerComponet/footerSection.css);
+
+
+html>* {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background: #FFF;
+    font-family: "Open Sans";
+}
+
+
+
+
+#page>* {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+    color: #FF6C00;
+}
+
+.bookButton {
+    width: 160px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 2px solid #FF6C00;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    background-color: transparent;
+}

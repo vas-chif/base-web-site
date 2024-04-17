@@ -1,0 +1,204 @@
+/* div for add image with background */
+#slideId {
+    width: auto;
+    height: 640px;
+    flex-shrink: 0;
+    background: #9DA4BD;
+    margin-left: 0;
+    position: relative;
+    background-image: url("../../../images/slide1.2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* nav menu for navigate in the webpage */
+.navSlide {
+    width: auto;
+    height: 48px;
+    flex-shrink: 0;
+    padding-right: 20px;
+}
+
+.navSlide ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navSlide li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.navSlide a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.navSlide ul li a,
+.navSlide ul li button {
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+/* #bookButton li {} */
+
+.bookButtonNav {
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #FF6C00;
+    flex-shrink: 0;
+    font-family: "Open Sans";
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.space2 {
+    width: 55px;
+}
+
+.liSlideTel,
+.liSlideButton {
+    float: right;
+}
+
+/* div for insert information, sup - titte, title, sub - tittle */
+
+.divSlideTexts {
+    width: 500px;
+    height: 202px;
+    margin-top: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-90%);
+}
+
+/* div sup-title */
+
+.miniInfoDvi {
+    margin-bottom: 0;
+}
+
+.lineMiniTitle {
+    width: 1px;
+    height: 60px;
+    transform: rotate(90deg);
+    background: #FF6C00;
+    flex-shrink: 0;
+}
+
+/* style ul for organizate the element minititle */
+.ulMiniInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ulMiniInfo li {
+    display: inline-block;
+}
+
+.miniInfo {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    width: 400px;
+}
+
+/*  //div title and sub - title */
+.title {
+    width: 500px;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+.subTitle {
+    width: 396px;
+    height: 62px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    text-align: left;
+}
+
+/* style div with button back and next for chenge backgraund */
+.divSlideButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.ulBottonBN {
+    display: flex;
+}
+
+.ulBottonBack,
+.ulButtonNext {
+    display: flex;
+}
+
+.ulBottonBN ul {
+    display: inline-block;
+}
+
+.ulButtonNext li,
+.ulBottonBack li {
+    margin-bottom: -20px;
+}
+
+
+.buttonBack,
+.buttonNext {
+    margin-right: 10px;
+    width: 60px;
+    height: 25px;
+    background: none;
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.buttonBack {
+    color: #9DA4BD;
+    border-style: none;
+    border-bottom: 2px solid #FF6C00;
+    text-align: left;
+}
+
+.buttonNext {
+    color: #9DA4BD;
+    border-style: none;
+    border-bottom: 2px solid #FF6C00;
+    text-align: right;
+}

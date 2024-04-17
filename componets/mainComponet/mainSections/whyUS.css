@@ -1,0 +1,62 @@
+#whyUsId {
+    width: 1280px;
+    height: 582px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+#whyUsId div {
+    flex-grow: 1;
+}
+
+#divWURecension {
+    display: flex;
+    justify-content: space-between;
+}
+
+#divWURecension ul {
+    display: flex;
+    margin-left: 0;
+}
+
+#divLeftWURec,
+#divRightWURec {
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+
+
+.divSReviews {
+    flex: 1;
+    background: #bbb3b3;
+    width: 170px;
+    height: 133px;
+    margin: 40px 0;
+}
+
+.divSReviews ul {
+    padding-left: 20px;
+    ;
+}
+
+#pDivReviews {
+    color: #303030;
+    margin-left: 20px;
+}
+
+.counterNumber {
+    width: 80px;
+    height: 40px;
+    color: #303030;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    margin: 10px;
+    margin-left: 0;
+    text-align: left;
+}
