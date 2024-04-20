@@ -1,0 +1,129 @@
+/* style title registration */
+#divTitleRegistration {
+    width: 800px;
+}
+
+
+.tittleRegClass {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    width: 420px;
+}
+
+/* style require info registration */
+#divInfoRegistration ul {
+    padding: 0;
+}
+
+#ulRegInfo {
+    display: flex;
+    padding: 0;
+    height: 40px;
+}
+
+/* set inputs tag */
+.inputsClass {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ede7e7;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+
+.labelsClass {
+    color: rgba(157, 164, 189, 0.40);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    height: auto;
+}
+
+#inputTel,
+#inputName {
+    border-bottom: 1px solid #FF6C00;
+    margin: 0 20px;
+    height: 38px;
+}
+
+.labelsClass:hover {
+    color: #FF6C00;
+}
+
+#liName {
+    margin-left: 20px;
+}
+
+#inputName,
+#inputTel {
+    height: auto;
+    margin: 5px 20px;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+
+#inputTel::-webkit-inner-spin-button,
+#inputTel::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    /* Hides arrows only on WebKit (Chrome, Safari) */
+    appearance: none;
+    /* Hide arrows on Firefox */
+}
+
+#liNamePhone {
+    margin-bottom: 20px;
+}
+
+#labelTel,
+#labelName {
+    width: auto;
+    height: 57;
+    margin-bottom: 0;
+}
+
+#liMessageInput {
+    width: 660px;
+    height: 100px;
+    border-bottom: 1px solid #FF6C00;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+
+#liMessageLabel,
+#liMessageInput {
+    margin-left: 20px;
+}
+
+#inputMessage {
+    height: 100px;
+    width: 660px;
+    font-size: 16px;
+    margin: 0;
+    text-align: left;
+    writing-mode: horizontal-tb;
+    padding: 0;
+}
+
+#buttonSend {
+    color: #FFF;
+    text-align: center;
+}
+
+#buttonSend:hover {
+    cursor: pointer;
+    color: #FF6C00;
+}

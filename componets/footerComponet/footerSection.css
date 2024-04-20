@@ -1,7 +1,11 @@
-.footer {
+@import url(./footerSections/contacts.css);
+@import url(./footerSections/registration.css);
+
+#footerId {
     width: 1280px;
-    height: 344px;
+    height: 444px;
     flex-shrink: 0;
     background: #191C26;
     color: #fff;
+    display: flex;
 }

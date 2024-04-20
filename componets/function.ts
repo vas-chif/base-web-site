@@ -1,3 +1,4 @@
+import { SlowBuffer } from "buffer";
 import { it } from "node:test";
 
 export function createGenericElement(
@@ -11,7 +12,7 @@ export function createGenericElement(
     target?: string;
   },
   textContent?: string,
-  parentElement?: HTMLElement
+  parentElement?: HTMLElement | string
 ): HTMLElement {
   const element = document.createElement(tagName);
 
@@ -36,15 +37,17 @@ export function createGenericElement(
   if (textContent) {
     element.textContent = textContent;
   }
-
   if (parentElement) {
-    parentElement.appendChild(element);
+    const parent =
+      typeof parentElement === "string"
+        ? document.getElementById(parentElement)
+        : parentElement;
+    if (parent) parent.appendChild(element);
   }
-
   return element;
-}
-/* Esempio di utilizzo della funzione createElement
-  // const div = createElement("div", { class: "container", id: "myDiv" },"Contenuto del div", parent);*/
+} // end function createGenericElement
+
+// const div = createElement("div", { class: "container", id: "myDiv" },"Contenuto del div", parent);*/
 
 export function createListWithAttributes(
   liItems: { [key: string]: string }[]
@@ -67,7 +70,7 @@ export function createListWithAttributes(
   });
 
   return ul;
-}
+} // end function createListWithAttributes
 /*const ul = createListWithAttributes(liName);*/
 
 export function createListWithAttributesLink(
@@ -125,7 +128,7 @@ export function createListWithAttributesLink(
   });
 
   return ul;
-}
+} // end function createListWithAttributesLink
 
 export function createNestedUL(
   tagName: string,
@@ -172,7 +175,7 @@ export function createNestedUL(
   }
 
   return ul;
-}
+} // end function createNestedUL
 
 export function createNestedDiv(
   divNames: (string | [string, string[]])[],
@@ -192,6 +195,88 @@ export function createNestedDiv(
       });
     } else {
       createGenericElement("div", { id: item }, undefined, parentElement);
+    }
+  });
+} // end function createNestedDiv
+
+export function insertSocialProfiles(
+  listSocialProf: {
+    class: string;
+    img: string;
+    href: string;
+    target: string;
+  }[],
+  parentID: string
+) {
+  const parentElement = document.getElementById(parentID);
+  if (!parentElement) {
+    console.error(`Element with id ${parentID} not found.`);
+    return;
+  }
+  const ulParent = createGenericElement(
+    "ul",
+    { class: "ulParent" },
+    undefined,
+    parentElement
+  );
+  listSocialProf.forEach((socialProf) => {
+    const liElements = createGenericElement(
+      "li",
+      { class: socialProf.class },
+      undefined,
+      ulParent
+    );
+
+    // const liElement = document.createElement("li");
+    const anchorElements = createGenericElement(
+      "a",
+      {
+        href: socialProf.href,
+        target: socialProf.target,
+      },
+      undefined,
+      liElements
+    );
+    const imgElements = createGenericElement(
+      "img",
+      {
+        src: socialProf.img,
+        class: socialProf.class,
+      },
+      undefined,
+      anchorElements
+    );
+  });
+} // end function insertSocialProfiles
+
+export interface ElementData {
+  tag: string;
+  attributes?: { [key: string]: string };
+  textContent?: string;
+  parentId?: string;
+}
+
+export function addElemntsTuLi(elementsData: ElementData[]) {
+  elementsData.forEach((data) => {
+    const element = document.createElement(data.tag);
+
+    if (data.attributes) {
+      for (const key in data.attributes) {
+        element.setAttribute(key, data.attributes[key]);
+      }
+    }
+
+    if (data.textContent) {
+      element.textContent = data.textContent;
+    }
+
+    if (data.parentId) {
+      const parentElement = document.getElementById(data.parentId);
+      if (parentElement) {
+        parentElement.appendChild(element);
+      } else {
+        console.error(`Parent element with id '${data.parentId}' not found.`);
+      }
     }
   });
 }

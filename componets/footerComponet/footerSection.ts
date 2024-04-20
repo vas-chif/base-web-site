@@ -1,11 +1,35 @@
+import { createFooterContacts } from "./footerSections/contacts.js";
+import { creatFooterRegistration } from "./footerSections/registration.js";
+import { createGenericElement } from "../function.js";
 export function createFooter(page: HTMLElement) {
-  const footer = document.createElement("footer");
-  footer.className = "footer";
-  page.appendChild(footer);
-
-  const h6Footer = document.createElement("h6");
-  h6Footer.innerText = "Footer";
-  footer.appendChild(h6Footer);
+  const footer = createGenericElement(
+    "footer",
+    {
+      id: "footerId",
+    },
+    undefined,
+    page
+  );
+  const regSection = createGenericElement(
+    "div",
+    {
+      id: "registrationDivID",
+    },
+    undefined,
+    footer
+  );
+  if (regSection) {
+    creatFooterRegistration(regSection);
+  }
+  const contatactSection = createGenericElement(
+    "div",
+    {
+      id: "contatDivID",
+    },
+    undefined,
+    footer
+  );
+  if (contatactSection) {
+    createFooterContacts(contatactSection);
+  }
 }
-
-// export default createFooter;

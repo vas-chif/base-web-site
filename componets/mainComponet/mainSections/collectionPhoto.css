@@ -1,5 +1,53 @@
 #collectionPhotoId {
     width: 1280px;
-    height: 679px;
+    height: 500px;
     flex-shrink: 0;
+}
+
+/* wor div up tittle */
+#divColectionMiniTitle {
+    margin-left: 20px;
+}
+
+#divColectionMiniTitle ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    ;
+}
+
+#divColectionMiniTitle li {
+    margin: 0 40px;
+}
+
+#liLineMinTitlColl {
+    width: 1px;
+    height: 60px;
+    transform: rotate(90deg);
+    flex-shrink: 0;
+    background: #FF6C00;
+}
+
+#liMinTitleColl {
+    color: #303030;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+/* work with gallery img */
+#divColectionGallery {
+    display: flex;
+}
+
+
+.divImgGallery {
+    width: 270px;
+    height: 360px;
+    flex-shrink: 0;
+    margin: 0 20px;
 }

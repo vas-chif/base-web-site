@@ -80,7 +80,7 @@
 .upperTitleAUClass {
     color: #303030;
     font-family: "Open Sans";
-    font-size: 11px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -150,22 +150,6 @@
     position: relative;
 }
 
-/* style bookButtonId */
-/* .bookButton {
-    width: 160px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    border: 1px solid #FF6C00;
-    font-family: "Open Sans";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    text-transform: uppercase;
-    background-color: transparent;
-} */
 
 #buttonAboutUs {
     color: #303030;
@@ -173,4 +157,8 @@
     right: 0;
     position: absolute;
     margin-right: 5px;
+}
+
+#buttonAboutUs:hover {
+    color: #FF6C00;
 }

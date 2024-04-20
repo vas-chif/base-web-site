@@ -1,0 +1,83 @@
+#contatDivID {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0;
+
+}
+
+#contatDivID {
+    width: auto;
+    height: 50px;
+}
+
+#divTitleContacts {
+    margin: 20px;
+}
+
+.titleContactClass {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    padding: 0;
+}
+
+
+#divInfoContacts ul {
+    padding: 0;
+    /* margin-left: 30px; */
+}
+
+.liContacts ul {
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+
+.liContacts li {
+    margin: 0 10px;
+
+}
+
+#liMiniTitleContacts {
+    margin-top: 30px;
+}
+
+#minititle {
+    margin-left: 30px;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+#lineMinititle {
+    width: 1px;
+    height: 60px;
+    transform: rotate(90deg);
+    flex-shrink: 0;
+    background: #FF6C00;
+    margin-left: 45px;
+}
+
+#pWorkTime {
+    color: #9DA4BD;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    width: 370px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-left: 15px;
+}

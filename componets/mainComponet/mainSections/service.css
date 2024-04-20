@@ -41,7 +41,7 @@
 .miniTitleServiceClass {
     color: #FFF;
     font-family: "Open Sans";
-    font-size: 11px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -131,4 +131,8 @@
     bottom: 0;
     right: 0;
     margin-right: 5px;
+}
+
+#butonServie:hover {
+    color: #FF6C00;
 }

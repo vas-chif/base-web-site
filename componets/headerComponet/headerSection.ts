@@ -1,5 +1,5 @@
-import { createSidebar } from "./headerSection/sidebar.js";
-import { createSlide } from "./headerSection/slide.js";
+import { createSidebar } from "./headerSections/sidebar.js";
+import { createSlide } from "./headerSections/slide.js";
 import { createGenericElement } from "../function.js";
 
 export function createHeader(page: HTMLElement) {

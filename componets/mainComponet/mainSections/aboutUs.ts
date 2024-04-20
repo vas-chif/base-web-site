@@ -34,7 +34,7 @@ export function createAboutUsSection(aboutUsSection: HTMLElement) {
     undefined,
     aboutUsSection
   );
-  // adding div img one to div
+  // adding div img 1 to div
   const aboutUsImgOne = createGenericElement(
     "div",
     { id: "aboutUsImgOne" },
@@ -46,7 +46,7 @@ export function createAboutUsSection(aboutUsSection: HTMLElement) {
     "aboutUsImgOne"
   );
 
-  // adding div img two to div
+  // adding div img 2 to div
   const aboutUsImgTwo = createGenericElement(
     "div",
     { id: "aboutUsImgTwo" },
